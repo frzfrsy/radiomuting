@@ -1,0 +1,357 @@
+local browse = game.CoreGui:FindFirstChild("AudPanel")
+if browse then
+	browse:Destroy()
+end
+
+local Screepsted = {
+	["_AudPanel"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_DropShadowHolder"] = Instance.new("Frame");
+	["_DropShadow"] = Instance.new("ImageLabel");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_Unmute"] = Instance.new("ImageButton");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_Mute"] = Instance.new("ImageButton");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_Horiz"] = Instance.new("Frame");
+	["_Verti"] = Instance.new("Frame");
+	["_teller"] = Instance.new("TextLabel");
+	["_Close"] = Instance.new("ImageButton");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_OnExecute"] = Instance.new("LocalScript");
+	["_intro"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint"] = Instance.new("UITextSizeConstraint");
+	["_LocalScript3"] = Instance.new("LocalScript");
+	["_SoundSystem"] = Instance.new("LocalScript");
+	["_clicking"] = Instance.new("Sound");
+	["_leaves"] = Instance.new("Sound");
+	["_hovers"] = Instance.new("Sound");
+}
+
+Screepsted["_AudPanel"].Name = "AudPanel"
+
+Screepsted["_Frame"].AnchorPoint = Vector2.new(1, 0.5)
+Screepsted["_Frame"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Screepsted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_Frame"].BorderSizePixel = 0
+Screepsted["_Frame"].Position = UDim2.new(10, -16, 0.5, 0)
+Screepsted["_Frame"].Size = UDim2.new(0, 100, 0, 100)
+Screepsted["_Frame"].Parent = Screepsted["_AudPanel"]
+
+Screepsted["_DropShadowHolder"].BackgroundTransparency = 1
+Screepsted["_DropShadowHolder"].BorderSizePixel = 0
+Screepsted["_DropShadowHolder"].Size = UDim2.new(1, 0, 1, 0)
+Screepsted["_DropShadowHolder"].ZIndex = 0
+Screepsted["_DropShadowHolder"].Name = "DropShadowHolder"
+Screepsted["_DropShadowHolder"].Parent = Screepsted["_Frame"]
+
+Screepsted["_DropShadow"].Image = "rbxassetid://6014261993"
+Screepsted["_DropShadow"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_DropShadow"].ImageTransparency = 0.5
+Screepsted["_DropShadow"].ScaleType = Enum.ScaleType.Slice
+Screepsted["_DropShadow"].SliceCenter = Rect.new(49, 49, 450, 450)
+Screepsted["_DropShadow"].AnchorPoint = Vector2.new(0.5, 0.5)
+Screepsted["_DropShadow"].BackgroundTransparency = 1
+Screepsted["_DropShadow"].BorderSizePixel = 0
+Screepsted["_DropShadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Screepsted["_DropShadow"].Size = UDim2.new(1, 47, 1, 47)
+Screepsted["_DropShadow"].ZIndex = 0
+Screepsted["_DropShadow"].Name = "DropShadow"
+Screepsted["_DropShadow"].Parent = Screepsted["_DropShadowHolder"]
+
+Screepsted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Screepsted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
+Screepsted["_UIStroke"].Parent = Screepsted["_Frame"]
+
+Screepsted["_Unmute"].Image = "http://www.roblox.com/asset/?id=6034323673"
+Screepsted["_Unmute"].Style = Enum.ButtonStyle.RobloxButton
+Screepsted["_Unmute"].AnchorPoint = Vector2.new(0, 1)
+Screepsted["_Unmute"].BackgroundColor3 = Color3.fromRGB(111.00000858306885, 111.00000858306885, 111.00000858306885)
+Screepsted["_Unmute"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_Unmute"].BorderSizePixel = 0
+Screepsted["_Unmute"].Position = UDim2.new(0, 0, 1, 0)
+Screepsted["_Unmute"].Size = UDim2.new(0, 50, 0, 50)
+Screepsted["_Unmute"].Name = "Unmute"
+Screepsted["_Unmute"].Parent = Screepsted["_Frame"]
+
+Screepsted["_Mute"].Image = "http://www.roblox.com/asset/?id=6034323679"
+Screepsted["_Mute"].Style = Enum.ButtonStyle.RobloxButton
+Screepsted["_Mute"].AnchorPoint = Vector2.new(1, 1)
+Screepsted["_Mute"].BackgroundColor3 = Color3.fromRGB(111.00000858306885, 111.00000858306885, 111.00000858306885)
+Screepsted["_Mute"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_Mute"].BorderSizePixel = 0
+Screepsted["_Mute"].Position = UDim2.new(1, 0, 1, 0)
+Screepsted["_Mute"].Size = UDim2.new(0, 50, 0, 50)
+Screepsted["_Mute"].Name = "Mute"
+Screepsted["_Mute"].Parent = Screepsted["_Frame"]
+
+Screepsted["_Horiz"].AnchorPoint = Vector2.new(0.5, 0.5)
+Screepsted["_Horiz"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Screepsted["_Horiz"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_Horiz"].BorderSizePixel = 0
+Screepsted["_Horiz"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Screepsted["_Horiz"].Size = UDim2.new(0, 100, 0, 1)
+Screepsted["_Horiz"].Name = "Horiz"
+Screepsted["_Horiz"].Parent = Screepsted["_Frame"]
+
+Screepsted["_Verti"].AnchorPoint = Vector2.new(0.5, 1)
+Screepsted["_Verti"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Screepsted["_Verti"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_Verti"].BorderSizePixel = 0
+Screepsted["_Verti"].Position = UDim2.new(0.5, 0, 1, 0)
+Screepsted["_Verti"].Size = UDim2.new(0, 2, 0, 49)
+Screepsted["_Verti"].Name = "Verti"
+Screepsted["_Verti"].Parent = Screepsted["_Frame"]
+
+Screepsted["_teller"].Font = Enum.Font.Unknown
+Screepsted["_teller"].Text = "is muted: no"
+Screepsted["_teller"].TextColor3 = Color3.fromRGB(255, 0, 0)
+Screepsted["_teller"].TextSize = 14
+Screepsted["_teller"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Screepsted["_teller"].BackgroundTransparency = 1
+Screepsted["_teller"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_teller"].BorderSizePixel = 0
+Screepsted["_teller"].Size = UDim2.new(1, 0, 0, 25)
+Screepsted["_teller"].Name = "teller"
+Screepsted["_teller"].Parent = Screepsted["_Frame"]
+
+Screepsted["_Close"].Image = "http://www.roblox.com/asset/?id=6023426922"
+Screepsted["_Close"].ScaleType = Enum.ScaleType.Fit
+Screepsted["_Close"].Style = Enum.ButtonStyle.RobloxButton
+Screepsted["_Close"].AnchorPoint = Vector2.new(0, 1)
+Screepsted["_Close"].BackgroundColor3 = Color3.fromRGB(111.00000858306885, 111.00000858306885, 111.00000858306885)
+Screepsted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_Close"].BorderSizePixel = 0
+Screepsted["_Close"].Position = UDim2.new(0, 0, 1, -50)
+Screepsted["_Close"].Size = UDim2.new(1, 0, 0, 25)
+Screepsted["_Close"].Name = "Close"
+Screepsted["_Close"].Parent = Screepsted["_Frame"]
+
+Screepsted["_intro"].Font = Enum.Font.RobotoCondensed
+Screepsted["_intro"].Text = "CREDIT TO HIM, CREDIT TO THE HERO, HE IS A CHILL NIGGA."
+Screepsted["_intro"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Screepsted["_intro"].TextScaled = true
+Screepsted["_intro"].TextSize = 18
+Screepsted["_intro"].TextWrapped = true
+Screepsted["_intro"].AnchorPoint = Vector2.new(0.5, 0.5)
+Screepsted["_intro"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_intro"].BackgroundTransparency = 0.25
+Screepsted["_intro"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Screepsted["_intro"].BorderSizePixel = 0
+Screepsted["_intro"].ClipsDescendants = true
+Screepsted["_intro"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Screepsted["_intro"].Size = UDim2.new(0, 200, 0, 50)
+Screepsted["_intro"].Visible = false
+Screepsted["_intro"].Name = "intro"
+Screepsted["_intro"].Parent = Screepsted["_AudPanel"]
+
+Screepsted["_UITextSizeConstraint"].MaxTextSize = 18
+Screepsted["_UITextSizeConstraint"].Parent = Screepsted["_intro"]
+
+Screepsted["_clicking"].SoundId = "rbxassetid://3848738002"
+Screepsted["_clicking"].Name = "clicking"
+Screepsted["_clicking"].Parent = Screepsted["_AudPanel"]
+
+Screepsted["_leaves"].SoundId = "rbxassetid://9116251623"
+Screepsted["_leaves"].Name = "leaves"
+Screepsted["_leaves"].Parent = Screepsted["_AudPanel"]
+
+Screepsted["_hovers"].SoundId = "rbxassetid://718616853"
+Screepsted["_hovers"].Name = "hovers"
+Screepsted["_hovers"].Parent = Screepsted["_AudPanel"]
+
+Screepsted["_AudPanel"].Parent = game.CoreGui
+
+local fake_module_scripts = {}
+
+local function HJYD_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Unmute.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Screepsted["_Unmute"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.teller.Text = "is muted: no"
+		script.Parent.Parent.teller.TextColor3 = Color3.new(1, 0, 0)
+		
+		repeat
+			local players = game.Players:GetPlayers()
+			if players ~= nil then
+				for i,v in pairs(players) do
+					task.spawn(function()
+						for i, x in next, v.Character:GetDescendants() do
+							if x:IsA("Sound") and x.Playing == false then
+								x.Playing = true
+							end
+						end
+					end)
+				end
+			end
+			wait()
+		until script.Parent.Parent.teller.TextColor3 == Color3.new(0, 1, 0)
+	end)
+end
+local function HMQKAG_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Mute.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Screepsted["_Mute"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.teller.Text = "is muted: yes"
+		script.Parent.Parent.teller.TextColor3 = Color3.new(0, 1, 0)
+		
+		repeat
+			local players = game.Players:GetPlayers()
+			if players ~= nil then
+				for i,v in pairs(players) do
+					task.spawn(function()
+						for i, x in next, v.Character:GetDescendants() do
+							if x:IsA("Sound") and x.Playing == true then
+								x.Playing = false
+							end
+						end
+						for i, x in next, v:FindFirstChildOfClass("Backpack"):GetDescendants() do
+							if x:IsA("Sound") and x.Playing == true then
+								x.Playing = false
+							end
+						end
+					end)
+				end
+			end
+			wait()
+		until script.Parent.Parent.teller.TextColor3 == Color3.new(1, 0, 0)
+	end)
+end
+local function WQXZER_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Close.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Screepsted["_Close"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:TweenPosition(
+			UDim2.new(10, -16, 0.5, 0),
+			Enum.EasingDirection.InOut,
+			Enum.EasingStyle.Sine,
+			5
+		)
+		wait(5)
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+local function RMJQPTI_fake_script() -- Fake Script: Workspace.AudPanel.Frame.OnExecute
+    local script = Instance.new("LocalScript")
+    script.Name = "OnExecute"
+    script.Parent = Screepsted["_Frame"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	StarterGui:SetCore("SendNotification", {
+		Title = "NAUGHTIFICATION",
+		Text = "You may need to wait 5 seconds before the GUI appears.",
+		Button1 = "KK",
+		Button2 = "ALRIGHT",
+		Duration = math.huge
+	})
+	
+	script.Parent:TweenPosition(
+		UDim2.new(1, -16, 0.5, 0),
+		Enum.EasingDirection.InOut,
+		Enum.EasingStyle.Sine,
+		5
+	)
+end
+local function LPFAA_fake_script() -- Fake Script: Workspace.AudPanel.intro.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Screepsted["_intro"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.Visible = true
+	wait(5)
+	script.Parent:TweenSize(
+		UDim2.new(0, 0, 0, 0),
+		Enum.EasingDirection.InOut,
+		Enum.EasingStyle.Sine,
+		1
+	)
+	wait(1)
+	script.Parent:Destroy()
+end
+local function SKTTZ_fake_script() -- Fake Script: Workspace.AudPanel.SoundSystem
+    local script = Instance.new("LocalScript")
+    script.Name = "SoundSystem"
+    script.Parent = Screepsted["_AudPanel"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local function playSound(sound)
+		script.Parent[sound]:Play()
+	end
+	
+	for _, v in pairs(script.Parent:GetDescendants()) do
+		if v:IsA('TextButton') or v:IsA('ImageButton') then
+			v.MouseEnter:Connect(function()
+				playSound("hovers")
+			end)
+	
+			v.MouseLeave:Connect(function()
+				playSound("leaves")
+			end)
+	
+			v.MouseButton1Click:Connect(function()
+				playSound("clicking")
+			end)
+		end
+	end
+end
+
+coroutine.wrap(HJYD_fake_script)()
+coroutine.wrap(HMQKAG_fake_script)()
+coroutine.wrap(WQXZER_fake_script)()
+coroutine.wrap(RMJQPTI_fake_script)()
+coroutine.wrap(LPFAA_fake_script)()
+coroutine.wrap(SKTTZ_fake_script)()
